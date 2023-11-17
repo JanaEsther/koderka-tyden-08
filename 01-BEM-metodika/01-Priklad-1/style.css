@@ -1,13 +1,19 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 body {
-	font-family: sans-serif;
-	margin: 30px;
+  font-family: sans-serif;
+  margin: 30px;
 }
 
 h2 {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 /* ************************************ */
@@ -16,3 +22,75 @@ h2 {
 	#0077ff			primární barva
 	#c0c0c0			sekundární barva
 */
+
+:root {
+  --primary: #0077ff;
+  --secondary: #909eaf;
+}
+
+.button {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid silver;
+  background-color: gainsboro;
+}
+
+.button--primary {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.button--secondary {
+  background-color: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
+}
+
+.button--big {
+  font-size: 30px;
+  padding: 15px 30px;
+}
+
+.photo {
+  margin: 0;
+  display: inline-block;
+  padding: 20px;
+  background-color: pink;
+}
+
+.photo--inverted {
+  background-color: black;
+}
+
+.photo--inverted .photo__caption {
+  color: white;
+}
+
+.photo__image {
+  display: block;
+}
+
+.photo__image--border {
+  border: 5px solid var(--primary);
+}
+
+.photo__caption {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.photo__quote {
+  margin: 10px 0 0 0;
+  color: red;
+}
+
+.gallery{
+	display: flex;
+	justify-content:space-between;
+}
+
+.gallery > *{
+	flex: 0 0 calc(100% -60px/3)
+	
+}
