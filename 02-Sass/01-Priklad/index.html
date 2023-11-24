@@ -27,14 +27,22 @@
 	- znak & a vnořování - BEM, pseudotřídy
 	- media query
 	-->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="scss/style.scss">
 
-	<header>
-	<h1>Zkoušíme Sass</h1>
+	<header class="header">
+	<h1 class="header__title">Zkoušíme Sass</h1>
+
+	<ul class="header__menu">
+<li><a class="header__link" href="#">Támhle</a></li>
+<li><a class="header__link" href="#">Jinam</a></li>
+<li><a class="header__link" href="#">Zpátky</a></li>
+	</ul>
+
 	</header>
 
-	<p>Nutné ty zdi výbavy současná nadšením chobotnaců trápí, iqaluitu stavba k national, 
-		jmelí jej do celém tomu informaci. Terénních jaké jednoduše k tak navštívit podél 
+	<p>Nutné ty zdi <a href="#">výbavy současná</a> nadšením chobotnaců trápí, 
+		iqaluitu stavba k national, jmelí jej do celém tomu informaci. Terénních 
+		jaké jednoduše k tak navštívit podél 
 		fond musejí, šiku ty.</p>
 
 	<p>Mořského jehož vy člověka. Cíle nově tradičních vidět domy musel, 
@@ -42,6 +50,10 @@
 		do přesun ze nejlogičtějším pozorovatel. Varování samice možná nám počest.</p>
 
 	<button>Jsem tlačítko. Tlač mě!</button>
+
+	<footer>
+		Já jsem patička, &copy; 2021
+	</footer>
 
 </body>
 </html>
